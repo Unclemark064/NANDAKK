@@ -1,0 +1,222 @@
+/* ========================================
+   ACADEMY PAGE SPECIFIC STYLES
+   Courses, Registration Form
+   ======================================== */
+
+/* ========================================
+   ACADEMY SECTION - Course listings
+   ======================================== */
+.academy {
+  padding: 120px 5% 80px;
+  background: white;
+  min-height: 100vh;
+}
+
+.academy-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   COURSES GRID
+   ======================================== */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+/* ========================================
+   COURSE CARDS
+   ======================================== */
+.course-card {
+  background: var(--light);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.course-card:hover {
+  border-color: var(--secondary);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+  height: 250px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ========================================
+   COURSE INFO
+   ======================================== */
+.course-info {
+  padding: 2rem;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  flex: 1;
+  min-width: 200px;
+}
+
+.course-duration {
+  background: var(--secondary);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.course-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.course-details {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.course-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+}
+
+.course-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   REGISTRATION FORM - Academy
+   ======================================== */
+.registration-form-container {
+  max-width: 800px;
+  margin: 5rem auto 0;
+}
+
+.bespoke-form {
+  background: var(--light);
+  border: 2px solid var(--secondary);
+  padding: 3rem;
+  border-radius: 25px;
+}
+
+.bespoke-form h3 {
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* ========================================
+   RESPONSIVE - Academy Page
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .academy {
+    padding: 100px 5% 60px;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .course-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .course-image {
+    height: 200px;
+  }
+  
+  .course-info {
+    padding: 1.5rem;
+  }
+  
+  .course-title {
+    font-size: 1.3rem;
+  }
+  
+  .course-price {
+    font-size: 1.8rem;
+  }
+  
+  .registration-form-container {
+    margin: 3rem auto 0;
+  }
+  
+  .bespoke-form {
+    padding: 2rem;
+  }
+  
+  .bespoke-form h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .course-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .course-title {
+    font-size: 1.2rem;
+  }
+  
+  .course-details {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .course-price {
+    font-size: 1.6rem;
+  }
+  
+  .bespoke-form {
+    padding: 1.5rem;
+  }
+}
