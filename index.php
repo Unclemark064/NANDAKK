@@ -12,19 +12,23 @@
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="logo">NAN</div>
-       <ul class="nav-menu" id="navMenu">
-          <li><a href="../index.php#home">Home</a></li>
-           <li><a href="nandakk/public/registration.html">Register</a></li>
-           <li><a href="public/login.html">Login</a></li>
-          <li><a href="../index.html#collections">Collections</a></li>
-          <li><a href="public/checkout.html">Cart</a></li>
-            <li><a href="public/orders.html">Orders</a></li>
-          <li><a href="public/about.html">About</a></li>
-          <li><a href="public/academy.html">Academy</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
-          <li><a href="/public/shop.html" class="cta-nav">Shop Now</a></li>
-           
-        </ul>
+           <ul class="nav-menu" id="navMenu">
+  <li><a href="/nandakk/#home">Home</a></li>
+
+  <li><a href="/nandakk/public/registration.php">Register</a></li>
+  <li><a href="/nandakk/public/login.php">Login</a></li>
+
+  <li><a href="/nandakk/#collections">Collections</a></li>
+  <li><a href="/nandakk/public/checkout.php">Cart</a></li>
+  <li><a href="/nandakk/public/orders.php">Orders</a></li>
+  <li><a href="/nandakk/public/about.php">About</a></li>
+  <li><a href="/nandakk/public/academy.php">Academy</a></li>
+  <li><a href="/nandakk/#contact">Contact</a></li>
+
+  <li><a href="/nandakk/public/shop.php" class="cta-nav">Shop Now</a></li>
+</ul>
+
+
         <div class="mobile-toggle" id="mobileToggle">
           <span></span>
           <span></span>

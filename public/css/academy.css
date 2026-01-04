@@ -44,6 +44,10 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+.img {
+height: 10px ;
+}
+
 .course-image {
   height: 250px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
